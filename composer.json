@@ -18,7 +18,7 @@
   "require": {
     "drupal/cms": "^1.1",
     "programeta/recipe-a11y": "^1.0",
-    "drupal/security_layer": "0.1.0-alpha4"
+    "drupal/security_layer": "0.x-dev"
   },
   "conflict": {
     "drupal/drupal": "*"
