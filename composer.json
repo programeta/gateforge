@@ -14,5 +14,70 @@
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     }
-  ]
+  ],
+  "require": {
+    "drupal/cms": "^11.1",
+    "programeta/recipe-a11y": "^1.0",
+    "drupal/security_layer": "^1.0"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      }
+    },
+    "installer-paths": {
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/Commands/contrib/{$name}": [
+        "type:drupal-drush"
+      ],
+      "web/modules/custom/{$name}": [
+        "type:drupal-custom-module"
+      ],
+      "web/profiles/custom/{$name}": [
+        "type:drupal-custom-profile"
+      ],
+      "recipes/{$name}": [
+        "type:drupal-recipe"
+      ],
+      "web/themes/custom/{$name}": [
+        "type:drupal-custom-theme"
+      ]
+    },
+    "drupal-core-project-message": {
+      "include-keys": [
+        "homepage",
+        "support"
+      ],
+      "post-create-project-cmd-message": [
+        "<bg=blue;fg=white>                                                   </>",
+        "<bg=blue;fg=white>  Congratulations, you’ve installed Drupal GateForge!    </>",
+        "<bg=blue;fg=white>                                                   </>",
+        "",
+        "<bg=yellow;fg=black>Next steps</>:",
+        "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+        "  * Get support: https://drupal.org/support",
+        "  * Get involved with the Drupal community: https://drupal.org/getting-involved"
+      ]
+    }
+  }
 }
