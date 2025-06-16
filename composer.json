@@ -16,9 +16,9 @@
     }
   ],
   "require": {
-    "drupal/cms": "^11.1",
+    "drupal/cms": "^1.1",
     "programeta/recipe-a11y": "^1.0",
-    "drupal/security_layer": "^1.0"
+    "drupal/security_layer": "0.1.0-alpha4"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -70,7 +70,7 @@
       ],
       "post-create-project-cmd-message": [
         "<bg=blue;fg=white>                                                   </>",
-        "<bg=blue;fg=white>  Congratulations, you’ve installed Drupal GateForge!    </>",
+        "<bg=blue;fg=white>  Congratulations, you’ve installed Drupal GateForge !    </>",
         "<bg=blue;fg=white>                                                   </>",
         "",
         "<bg=yellow;fg=black>Next steps</>:",
